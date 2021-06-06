@@ -35,10 +35,6 @@ const paths = {
     src: './app/images/**/*',
     dest: './build/assets/images'
   },
-  favicon: {
-    src: './app/favicon.ico',
-    dest: './build'
-  },
   fonts: {
     src: './app/fonts/*',
     dest: './build/fonts'
@@ -122,13 +118,6 @@ const images = () =>
     .pipe(imagemin())
     .pipe(gulp.dest(paths.images.dest));
 
-// Copy the favicon
-const favicon = () =>
-  gulp
-    .src(paths.favicon.src)
-    .pipe(plumber())
-    .pipe(gulp.dest(paths.favicon.dest));
-
 // Copy the fonts
 const fonts = () =>
   gulp
@@ -147,7 +136,6 @@ function watchFiles() {
 
   gulp.watch(paths.styles.src, styles);
   gulp.watch(paths.vendors.src, vendors).on('change', browserSync.reload);
-  gulp.watch(paths.favicon.src, favicon).on('change', browserSync.reload);
   gulp.watch(paths.fonts.src, fonts).on('change', browserSync.reload);
   gulp.watch(paths.scripts.src, scripts).on('change', browserSync.reload);
   gulp.watch(paths.images.src, images).on('change', browserSync.reload);
@@ -156,7 +144,7 @@ function watchFiles() {
 
 const build = gulp.series(
   clean,
-  gulp.parallel(styles, vendors, scripts, images, favicon),
+  gulp.parallel(styles, vendors, scripts, images),
   cacheBust
 );
 
@@ -167,7 +155,6 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.vendors = vendors;
 exports.images = images;
-exports.favicon = favicon;
 exports.fonts = fonts;
 exports.watch = watch;
 exports.build = build;
