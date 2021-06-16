@@ -1,10 +1,10 @@
-//font-family: 'Montserrat', sans-serif;
+$main-black: #3C464E;
 
 body {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
-	font-size: 15px;
-	color: #999999;
+	font-size: 14px;
+	color: $main-black;
 	line-height: 1.6;
 }
 
