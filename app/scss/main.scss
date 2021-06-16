@@ -1,11 +1,18 @@
+@import './normalize/normalize.scss';
+
 $main-black: #3C464E;
+
+
 
 body {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	color: $main-black;
-	line-height: 1.6;
+	line-height: 1.4;
+
+
+	height: 2000px; //del
 }
 
 .container {
@@ -14,4 +21,22 @@ body {
 	padding: 0 15px;
 	margin: 0 auto;
 	box-sizing: border-box;
+}
+
+.header {
+	background: url('../images/intro.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+
+.menu {
+	height: 62px;
+	display: flex;
+
+	&__nav {
+		display: flex;
+		justify-content: center;
+	}
 }
