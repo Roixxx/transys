@@ -24,6 +24,59 @@ body {
 }
 
 .header {
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	position: absolute;
+	padding: 0 55px;
+	width: 100%;
+	height: 82px;
+	font-size: 16px;
+
+	&__link {
+		margin-right: auto;
+	}
+
+	.nav {
+		display: flex;
+		align-items: center;
+
+		&__link {
+			color: $main-black;
+			font-weight: 600;
+		}
+
+		&__item {
+			margin-right: 52px;
+		}
+	}
+
+	&__info {
+		display: flex;
+
+		&-item {
+			margin-right: 34px;
+			padding-left: 32px;
+		}
+
+		.location {
+			background-image: url('../images/icons/pin-icon.png');
+			background-repeat: no-repeat;
+			background-position-y: center;
+		}
+
+		.timetable {
+			background: url('../images/icons/time-icon.png') no-repeat left center;
+		}
+	}
+
+	&__feedback-btn {
+	}
+}
+
+
+.intro {
 	background: url('../images/intro.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -31,12 +84,3 @@ body {
 	height: 100vh;
 }
 
-.menu {
-	height: 62px;
-	display: flex;
-
-	&__nav {
-		display: flex;
-		justify-content: center;
-	}
-}
