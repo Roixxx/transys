@@ -6,6 +6,8 @@ $main-yellow: #f6ff57;
 $main-white: #ffffff;
 
 
+//////////base styles
+
 
 body {
 	font-family: "Montserrat", sans-serif;
@@ -25,6 +27,10 @@ body {
 	margin: 0 auto;
 	box-sizing: border-box;
 }
+
+
+
+////////////
 
 .header {
 
@@ -106,7 +112,7 @@ body {
 
 	&__info {
 		position: absolute;
-		top: 50%;
+		top: 28%;
 
 		max-width: 555px;
 		width: 100%;
