@@ -1,0 +1,59 @@
+body {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: $main-black;
+	line-height: 1.4;
+
+
+	height: 2000px; //del
+}
+
+.container {
+	width: 100%;
+	max-width: 1230px;
+	padding: 0 15px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.btn {
+	color: $main-white;
+	font-weight: 400;
+	border: 2px solid $main-white;
+	padding: 5px 40px;
+	font-size: 14px;
+	transition: background-color 0.3s, border-color 0.3s;
+
+		&:hover {
+			background-color: $main-blue;
+			border-color: $main-blue;
+		}
+}
+
+.section-title {
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 1.22;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	color: $main-black;
+	display: inline-block;
+
+
+	&::before {
+		content: '';
+		width: 342px; ////////// fix
+		height: 1px;
+		background-color: $main-black;
+		display: inline-block;
+	}
+	&::after {
+		content: '';
+		width: 342px; ////////// fix
+		height: 1px;
+		background-color: $main-black;
+		display: inline-block;
+	}
+}
