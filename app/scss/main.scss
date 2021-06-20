@@ -1,6 +1,9 @@
 @import './normalize/normalize.scss';
 
 $main-black: #3C464E;
+$main-blue: #39B8FF;
+$main-yellow: #f6ff57;
+$main-white: #ffffff;
 
 
 
@@ -44,12 +47,12 @@ body {
 		align-items: center;
 
 		&__link {
-			color: $main-black;
+			color: $main-white;
 			font-weight: 600;
 			transition: color 0.3s;
 
 			&:hover {
-				color: #6794b7;
+				color: $main-yellow;
 			}
 		}
 
@@ -64,6 +67,7 @@ body {
 		&-item {
 			margin-right: 34px;
 			padding-left: 32px;
+			color: $main-white;
 		}
 
 		.location {
@@ -78,15 +82,15 @@ body {
 	}
 
 	&__feedback-btn {
-		color: #3c464e;
+		color: $main-white;
     font-weight: 600;
-		border: 2px solid #FFFFFF;
+		border: 2px solid $main-white;
 		padding: 4px 44px;
-		transition: color 0.3s, border-color 0.3s;
+		transition: background-color 0.3s, border-color 0.3s;
 
 			&:hover {
-				color: #6794b7;
-				border-color: #6794b7;
+				background-color: $main-blue;
+				border-color: $main-blue;
 			}
 	}
 }
@@ -106,15 +110,16 @@ body {
 
 		max-width: 555px;
 		width: 100%;
+		z-index: 3;
 	}
 
 	&__title {
 		font-weight: bold;
 		font-size: 48px;
 		line-height: 1.23;
-		color: #fff;
+		color: $main-white;
 		padding-bottom: 10px;
-		border-bottom: 2px solid #f6ff57;
+		border-bottom: 2px solid $main-yellow;
 		margin-bottom: 37px;
 	}
 
@@ -122,8 +127,17 @@ body {
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 1.22;
-		color: #FFFFFF;
+		color: $main-white;
 		margin-bottom: 30px;
 	}
 }
 
+.intro::after {
+	background-color: rgba(0,0,0,.3);
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	content: '';
+}
