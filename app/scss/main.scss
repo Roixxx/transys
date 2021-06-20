@@ -28,7 +28,19 @@ body {
 	box-sizing: border-box;
 }
 
+.btn {
+	color: $main-white;
+	font-weight: 400;
+	border: 2px solid $main-white;
+	padding: 5px 40px;
+	font-size: 14px;
+	transition: background-color 0.3s, border-color 0.3s;
 
+		&:hover {
+			background-color: $main-blue;
+			border-color: $main-blue;
+		}
+}
 
 ////////////
 
@@ -58,7 +70,7 @@ body {
 			transition: color 0.3s;
 
 			&:hover {
-				color: $main-yellow;
+				color: $main-blue;
 			}
 		}
 
@@ -125,7 +137,7 @@ body {
 		line-height: 1.23;
 		color: $main-white;
 		padding-bottom: 10px;
-		border-bottom: 2px solid $main-yellow;
+		border-bottom: 2px solid $main-blue;
 		margin-bottom: 37px;
 	}
 
@@ -135,6 +147,29 @@ body {
 		line-height: 1.22;
 		color: $main-white;
 		margin-bottom: 30px;
+	}
+
+	&__btn {
+		margin-top: 55px;
+	}
+
+	&__down-btn {
+		display: flex;
+    justify-content: center;
+
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    z-index: 11;
+
+		svg {
+			fill: $main-white;
+			transition: .3s;
+		}
+
+		&:hover svg {
+			fill: $main-blue !important;
+		}
 	}
 }
 
