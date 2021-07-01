@@ -177,25 +177,29 @@
 		display: flex;
 	}
 
+	&__item {
+		margin-bottom: 19px;
+
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	&__icon {
+		display: block;
+		min-width: 56px;
+		min-height: 56px;
+		border-radius: 50%;
+		border: 2px solid #008DD2;
+		background: url(../images/icons/crm-icon.png) no-repeat 60%;
+	}
+
 	&__text {
 
 		font-size: 18px;
 		line-height: 1.22;
 		color: $main-black;
-		padding-left: 104px;
+		padding-left: 47px;
 		position: relative;
-
-		&::before {
-			content: '';
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 56px;
-			height: 56px;
-			border-radius: 50%;
-			border: 2px solid #008DD2;
-			background: url(../images/icons/crm-icon.png) no-repeat 60%;
-		}
 	}
 }
