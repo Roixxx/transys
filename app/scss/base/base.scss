@@ -24,6 +24,7 @@ body {
 	padding: 5px 40px;
 	font-size: 14px;
 	transition: background-color 0.3s, border-color 0.3s;
+	white-space: nowrap;
 
 		&:hover {
 			background-color: $main-blue;
