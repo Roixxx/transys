@@ -227,7 +227,6 @@
 		line-height: 1.22;
 		color: $main-black;
 		padding-left: 47px;
-		position: relative;
 	}
 }
 
@@ -292,7 +291,7 @@
 		}
 
 		&__item {
-			max-width: 320px;
+			max-width: 330px;
 			width: 100%;
 		}
 
@@ -304,3 +303,4 @@
 	}
 
 }
+
