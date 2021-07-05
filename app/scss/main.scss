@@ -93,7 +93,7 @@
 	background: url('../images/intro.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: 35%;
 	height: 100vh;
 	position: relative;
 
@@ -149,7 +149,7 @@
 }
 
 .intro::after {
-	background-color: rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,.4);
 	height: 100%;
 	position: absolute;
 	width: 100%;
@@ -342,6 +342,11 @@
 }
 
 @media (max-width: 480px) {
+
+	.header .btn {
+		display: none;
+	}
+
 	.advantages {
 
 		&__list {
