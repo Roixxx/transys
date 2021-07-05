@@ -201,6 +201,8 @@
 	&__list {
 		max-width: 350px;
 		width: 100%;
+		display: flex;
+		flex-direction: column;
 	}
 
 	&__item {
@@ -259,7 +261,6 @@
 	.advantages {
 		&__truck img {
 			width: 612px;
-			height: 323px;
 			margin-left: -50px;
 		}
 	}
@@ -274,15 +275,10 @@
 		}
 
 		&__list {
-			display: flex;
 			max-width: 100%;
-			flex-wrap: wrap;
-			
 			margin-top: 45px;
-
-			flex-direction: column;
-			align-items: center;
-    	max-height: 235px;
+			flex-direction: row;
+			justify-content: center;
 		}
 
 		&__text {
@@ -304,3 +300,4 @@
 
 }
 
+@media (max-width: 480px) {}
