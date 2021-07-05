@@ -5,12 +5,11 @@ body {
 	color: $main-black;
 	line-height: 1.4;
 
-
-	height: 2000px; //del
 }
 
 .container {
 	width: 100%;
+	height: 100%;
 	max-width: 1230px;
 	padding: 0 15px;
 	margin: 0 auto;
@@ -63,11 +62,15 @@ body {
 	.section-title {
 		font-size: 24px;
 	}
+
 }
+
+
 
 @media (max-width: 480px) {
 
 	.section-title {
 		font-size: 18px;
 	}
+
 }
