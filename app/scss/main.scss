@@ -252,25 +252,34 @@
 		max-width: 340px;
 	}
 
+	&__container {
+		position: relative;
+		max-width: 1440px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
 	&__kinds-holder {
 
-		height: 2000px; ////del
-
-		max-width: 1445px;
-		width: 100%;
+		height: 2000px; // ?
+ 		width: 100%;  
 		margin: 0 auto;
 		margin-top: 290px;
 		background: url('../images/traffic/bg.png') no-repeat top/contain;
-		position: relative;
 
 	}
 
 	&__row {
 		position: absolute;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
 	}
 
 	.row-1 {
-		top: -6.6%;  // ?
+		top: -6.56%;  // ?
+		padding-left: 20%;
+		padding-right: 10.5%;
 	}
 
 	&__item {
