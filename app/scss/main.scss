@@ -163,6 +163,7 @@
 
 .advantages {
 	background: linear-gradient(180deg, #CFD4DB 43.05%, rgba(186, 193, 201, 0) 100%);
+	padding-bottom: 185px;
 
 	.bg{
 		display: flex;
@@ -232,6 +233,41 @@
 		padding-left: 47px;
 	}
 }
+
+//SECTION TRAFFIC
+
+.traffic {
+
+	margin-top: -40px; 
+	background-color: $main-white;
+
+	.section-title {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.section-title::before,
+	.section-title::after {
+		background-color: #C4C4C4;
+		max-width: 340px;
+	}
+
+	&__kinds-holder {
+
+		height: 2000px; ////del
+
+		max-width: 1445px;
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 290px;
+		background: url('../images/traffic/bg.png') no-repeat top/contain;
+	}
+}
+
+
+
+
+
 
 // MEDIA QUERIES
 
