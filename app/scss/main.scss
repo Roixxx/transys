@@ -371,6 +371,10 @@
 
 		&__background {}
 
+		&__name {
+			font-size: 14px;
+		}
+
 		&__kinds-holder {
 			margin-top: 150px;
 		}
@@ -442,6 +446,14 @@
 
 	.traffic {
 		margin: 0 2.6%;
+
+		.row-1 {
+			top: -10.25%;
+		}
+
+		&__item {
+			width: 35.8%;
+		}
 	}
 }
 
@@ -484,6 +496,29 @@
 		&__icon {
 			min-width: 53px;
     	min-height: 53px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.advantages {
+		padding-bottom: 80px;
+	}
+
+	.traffic {
+
+		&__row {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__item {
+			margin: 0 !important;
+			width: 61.5%;
+		}
+
+		&__kinds-holder {
+			margin-top: 100px;
 		}
 	}
 }
