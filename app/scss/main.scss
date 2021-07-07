@@ -272,13 +272,19 @@
 	}
 
 	.row-1 {
-		top: -10.2%;  // ?
-		//margin-left: 20%;
-		//margin-right: 10.5%;
+		top: -10.2%;  
+
+		.traffic__item:first-child {
+			margin-left: 21%;
+		}
+
+		.traffic__item:last-child {
+			margin-right: 11%;
+		}
 	}
 
 	&__item {
-		width: 30.6%; // ?
+		width: 30.6%; 
 
 		display: flex;
 		flex-direction: column;
@@ -286,7 +292,7 @@
 	}
 
 	&__img {
-		width: 100%; // ?
+		width: 100%; 
 	}
 
 	&__name {
@@ -357,6 +363,22 @@
 
 	.intro__info {
 		width: 90%; 
+	}
+	
+	.traffic {
+		margin: 0 6%;
+
+		&__kinds-holder {
+			margin-top: 150px;
+		}
+
+		.row-1 .traffic__item:first-child {
+			margin-left: 8%;
+		}
+
+		.row-1 .traffic__item:last-child {
+			margin-right: 8%;
+		}
 	}
 
 }
