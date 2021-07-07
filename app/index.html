@@ -111,7 +111,11 @@
 		<h2 class="section-title">Виды осуществляемых перевозок</h2>
 
 		<div class="traffic__kinds-holder">
-			<img class="traffic__background" src="./assets/images/traffic/bg.png" alt="bg">
+			<picture>
+				<source srcset="./assets/images/traffic/bg-1920.svg" media="(min-width: 1000px)">
+				<source srcset="./assets/images/traffic/bg-1000.svg" media="(min-width: 500px)">
+				<img class="traffic__background" src="./assets/images/traffic/bg-1920.svg" alt="bg">
+			</picture>
 			<div class="traffic__row row-1">
 				<div class="traffic__item">
 					<img class="traffic__img" src="./assets/images/traffic/5.svg" alt="traffic">

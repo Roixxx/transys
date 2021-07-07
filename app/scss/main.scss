@@ -237,6 +237,7 @@
 //SECTION TRAFFIC
 
 .traffic {
+	margin: 0 6%;
 
 	margin-top: -40px; 
 	background-color: $main-white;
@@ -368,8 +369,14 @@
 	.traffic {
 		margin: 0 6%;
 
+		&__background {}
+
 		&__kinds-holder {
 			margin-top: 150px;
+		}
+
+		.row-1 {
+			top: -8.7%;
 		}
 
 		.row-1 .traffic__item:first-child {
@@ -431,6 +438,10 @@
 		&__info {
 			display: none;
 		}
+	}
+
+	.traffic {
+		margin: 0 2.6%;
 	}
 }
 
