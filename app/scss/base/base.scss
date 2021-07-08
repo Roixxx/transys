@@ -74,3 +74,11 @@ body {
 	}
 
 }
+
+@media (max-width: 360px) {
+	.section-title {
+		&::before, &::after {
+			display: none;
+		}
+	}
+}

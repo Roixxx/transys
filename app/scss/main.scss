@@ -554,4 +554,26 @@
 			flex-direction: column;
 		}
 	}
+
+	.traffic {
+		&__kinds-holder {
+			margin-top: 45px;
+		}
+
+		&__background {
+			display: none;
+		}
+
+		&__item {
+			width: 86%;
+		}
+
+		&__name {
+			font-size: 14px
+		}
+
+		&__item {
+			margin-bottom: 40px !important; 
+		}
+	}
 } 
