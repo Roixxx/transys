@@ -513,12 +513,28 @@
 		}
 
 		&__item {
-			margin: 0 !important;
-			width: 61.5%;
+			margin: 0;
+			width: 57.8%;
 		}
 
 		&__kinds-holder {
 			margin-top: 100px;
+		}
+
+		&__name {
+			margin-top: 8%;
+			font-size: 3vw;
+		}
+
+		.row-1 {
+    	top: -6.6%;
+
+			.traffic__item:first-child {
+				margin: 0 0 9.2%;
+			}
+			.traffic__item:last-child {
+				margin: 0;
+			}
 		}
 	}
 }
