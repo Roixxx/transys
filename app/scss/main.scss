@@ -325,15 +325,10 @@
 			margin-left: 17.77%;
 			width: 64.6%;
 		}
-
-		.traffic__img {
-			//width: 135%;
-		}
 	}
 
 	&__item {
 		width: 30.6%; 
-
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -348,12 +343,9 @@
 		line-height: 1.22;
 		text-transform: uppercase;
 		font-weight: 600;
-
 		margin-top: 21px;
 	}
 }
-
-
 
 
 
@@ -381,13 +373,6 @@
 		}
 	}
 
-	.traffic {
-		.row-1 {
-
-			//padding-left: 10%;
-			//padding-right: 5%;
-	}
-	}
 }
 
 @media (max-width: 1200px) {
@@ -416,8 +401,6 @@
 	.traffic {
 		margin: 0 6%;
 
-		&__background {}
-
 		&__name {
 			font-size: 14px;
 		}
@@ -428,6 +411,18 @@
 
 		.row-1 {
 			top: -8.7%;
+		}
+		.row-2 {
+			top: 14.8%;
+		}
+		.row-3 {
+			top: 36.59%;
+		}
+		.row-4 {
+			top: 59.6%;
+		}
+		.row-5 {
+			top: 87.4%;
 		}
 
 		.row-1 .traffic__item:first-child {
@@ -498,6 +493,26 @@
 			top: -10.25%;
 		}
 
+		.row-2 {
+			top: 13%;
+
+			.traffic__item:last-child {
+				margin-right: 7.6%;
+			}
+		}
+
+		.row-3 {
+			top: 34.6%;
+
+			.traffic__item:first-child {
+    		margin-left: 7.61%;
+			}
+
+			.traffic__item:last-child {
+    		margin-right: 7.65%;
+			}
+		}
+
 		&__item {
 			width: 35.8%;
 		}
@@ -554,9 +569,19 @@
 
 	.traffic {
 
-		&__row {
-			flex-direction: column;
-			align-items: center;
+		&__kinds-holder {
+
+			.traffic__row {
+				flex-direction: column;
+				align-items: center;
+
+				.traffic__item:first-child {
+					margin: 0 0 9.2% 0;
+				}
+				.traffic__item:last-child {
+					margin: 0;
+				}
+			}
 		}
 
 		&__item {
@@ -575,12 +600,30 @@
 
 		.row-1 {
     	top: -6.6%;
+		}
+		.row-2 {
+    	top: 21%;
+		}
+		.row-3 {
+    	top: 48.6%;
 
 			.traffic__item:first-child {
-				margin: 0 0 9.2%;
+				margin: 0 0 7.2% 0;
 			}
-			.traffic__item:last-child {
-				margin: 0;
+		}
+		.row-4 {
+			top: 76.1%;
+
+    	.traffic__item:first-child {
+				width: 85%;
+				margin-left: 0;
+			}
+		}
+		.row-5 {
+			top: 95.4%;
+
+    	.traffic__item:first-child {
+				width: 100%;
 			}
 		}
 	}
@@ -609,6 +652,11 @@
 
 		&__background {
 			display: none;
+		}
+
+		&__row {
+			position: relative;
+			top: 0 !important;
 		}
 
 		&__item {
