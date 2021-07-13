@@ -240,6 +240,7 @@
 	margin: 0 6%;
 
 	margin-top: -40px; 
+	padding-bottom: 12.5%;
 	background-color: $main-white;
 
 	.section-title {
@@ -769,3 +770,61 @@
 		}
 	}
 } 
+
+
+// section quality
+
+.quality {
+
+	margin-top: 150px;
+
+
+	.director {
+		display: flex;
+		max-width: 1140px;
+		width: 100%;
+		margin: 0 auto;
+
+		&__title {
+			font-weight: 600;
+			font-size: 50px;
+			line-height: 1.06;
+			color: #0A6397;
+			max-width: 570px;
+		}
+
+		&__name {
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 1.2;
+			margin: 25px 0;
+		}
+
+		&__info {
+			margin-top: 50px;
+			margin-left: 20px;
+		}
+
+		&__contact {
+			max-width: 247px;
+			font-size: 18px;
+			line-height: 1.22;
+		}
+	}
+
+	.benefits {
+		height: 1000px;
+		background-color: #0A6397;
+
+
+
+
+
+
+		// ?
+		border-width: 300px 100vw 0 0;
+    border-color: #ffffff transparent transparent transparent;
+    border-style: solid;
+
+	}
+}
