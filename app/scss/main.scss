@@ -257,6 +257,83 @@
 		width: 100%;
 	}
 
+	&__content {
+		position: relative;
+	}
+
+	.cloud {
+		position: absolute;
+
+		&-1 {
+			top: -20%;
+		}
+		&-2 {
+			top: -24%;
+			right: 0%;
+		}
+		&-3 {
+			top: 10%;
+		}
+		&-4 {
+			top: 8%;
+			left: 40%;
+			width: 8%;
+		}
+		&-5 {
+			top: 8%;
+			right: 10%;
+			transform: scale(-1, 1)
+		}
+		&-6 {
+			top: 38%;
+			left: 14%;
+			width: 7%;
+		}
+		&-7 {
+			top: 31%;
+			left: 43%;
+		}
+		&-8 {
+			top: 31%;
+			right: 14%;
+			width: 7%;
+		}
+		&-9 {
+			top: 65%;
+			left: 10%;
+			width: 7%;
+		}
+		&-10 {
+			top: 58%;
+			left: 14%;
+			transform: scale(-1, 1);
+		}
+		&-11 {
+			top: 58%;
+			right: 14%;
+			transform: scale(-1, 1)
+		}
+		&-12 {
+			top: 66%;
+			right: 10%;
+			width: 7%;
+		}
+		&-13 {
+			top: 90%;
+			left: 30%;
+		}
+		&-14 {
+			top: 84%;
+    	left: 43%;
+			width: 7%;
+		}
+		&-15 {
+			top: 86%;
+    	right: 32%;
+			width: 7%;
+		}
+	}
+
 	&__kinds-holder {
 		max-width: 1436px;
  		width: 100%;  
