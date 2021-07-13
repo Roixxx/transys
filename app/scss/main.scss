@@ -264,15 +264,31 @@
 	.cloud {
 		position: absolute;
 
+		&--big {
+			width: 21%;
+		}
+
+		&--small {
+			width: 7%;
+		}
+
+		&--medium {
+			width: 13%;
+		}
+
 		&-1 {
 			top: -20%;
 		}
 		&-2 {
 			top: -24%;
 			right: 0%;
+
+			@media (max-width: 1000px) {
+				top: -15%;
+			}
 		}
 		&-3 {
-			top: 10%;
+			top: 7%;
 		}
 		&-4 {
 			top: 8%;
@@ -320,7 +336,7 @@
 		}
 		&-13 {
 			top: 90%;
-			left: 30%;
+			left: 25%;
 		}
 		&-14 {
 			top: 84%;
@@ -659,6 +675,10 @@
 					margin: 0;
 				}
 			}
+		}
+
+		.cloud {
+			display: none;
 		}
 
 		&__item {
