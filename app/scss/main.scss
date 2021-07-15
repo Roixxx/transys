@@ -448,7 +448,7 @@
 .quality {
 
 
-	margin-top: 150px;
+	margin-top: 140px;
 	position: relative;
 
 
@@ -456,7 +456,7 @@
 	.director {
 
 		display: flex;
-		max-width: 1140px;
+		max-width: 1100px;
 		width: 100%;
 		margin: 0 auto;
 
@@ -476,7 +476,7 @@
 		}
 
 		&__info {
-			margin-top: 50px;
+			margin-top: 78px;
 			margin-left: 20px;
 		}
 
@@ -488,15 +488,16 @@
 	}
 
 	.benefits {
-		background: url("../images/benefits-bg.png") no-repeat center; // ?
-
-		height: 1000px; // ?
+		background: url("../images/benefits-bg.png") no-repeat;
+		margin-top: -455px; // ?
 
 
 		&__container {
 			max-width: 1100px;
 			width: 100%;
 			margin: 0 auto;
+			padding-top: 285px;
+
 		}
 
 		&__list {
@@ -508,7 +509,8 @@
 
 		&__item {
 			color: $main-white;
-			max-width: 392px;
+			max-width: 475px;
+			padding-left: 146px;
 			width: 100%;
 			margin-bottom: 90px;
 			position: relative;
@@ -522,8 +524,8 @@
 			font-size: 170px;
 			position: absolute;
 			line-height: 1;
-			top: 0;
-			left: -115px;
+			top: -18px;
+			left: 0px;
 			color: #0A6397;
 
 			text-shadow: 
@@ -548,16 +550,22 @@
 		&__item:nth-child(odd) {
 			justify-self: flex-end;
 			align-self: flex-end;
+			max-width: 538px;
+		}
+
+		&__item:first-child::before {
+			left: 25px;
 		}
 
 		&__title {
 			font-weight: bold;
 			font-size: 20px;
+			margin-bottom: 15px;
 		}
 
 		&__text {
 			font-size: 18px;
-			line-height: 1.11;
+			line-height: 125.9%;
 		}
 	}
 }
