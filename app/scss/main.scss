@@ -866,7 +866,8 @@
 
 		&__list {
 			margin: 0 auto;
-			width: max-content;
+			width: fit-content;
+			padding: 0 15px;
 		}
 
 		&__item {
@@ -1005,6 +1006,32 @@
 	}
 }
 
+@media (max-width: 450px) {
+	.director {
+		position: relative;
+		
+
+		img {
+			width: 145px;
+			position: absolute;
+			right: 0;
+			top: 100px;
+		}
+
+		&__info {
+			max-width: 272px;
+		}
+
+		p.director__name {
+			margin: 40px 0 20px 0;
+		}
+	}
+
+	.benefits {
+    margin-top: -270px;
+	}
+}
+
 @media (max-width: 360px) {
 	.advantages .advantages__truck img {
 		width: 350px;
@@ -1045,6 +1072,37 @@
 
 		&__item {
 			margin-bottom: 40px !important; 
+		}
+	}
+
+	.benefits {
+
+
+		&__list {
+			margin: 0 17px 0 12px;
+			padding: 0;
+		}
+
+		&__item {
+			
+			max-width: 280px;
+
+			padding-left: 30px !important;
+			margin-bottom: 50px;
+
+
+			&::before {
+				font-size: 24px;
+				top: 5px;
+			}
+
+			&:first-child::before {
+				left: 3px;
+			}
+
+			&:nth-child(4):before {
+				left: -1px;
+			}
 		}
 	}
 } 
