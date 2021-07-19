@@ -498,7 +498,6 @@
 		width: 100%;
 		margin: 0 auto;
 		padding-top: 285px;
-
 	}
 
 	&__list {
@@ -568,14 +567,23 @@
 		font-size: 18px;
 		line-height: 125.9%;
 	}
+
+	&__estimate-btn {
+		text-align: center;
+		margin-top: 50px;
+		padding-bottom: 100px;
+
+		a {
+			font-size: 14px;
+			text-align: center;
+			color: $main-white;
+			display: inline-block;
+			padding: 12px 41px;
+			background-color: #0093FF;
+			margin: 0 auto;
+		}
+	}
 }
-
-
-
-
-
-
-
 
 
 
@@ -1049,6 +1057,8 @@
 	}
 
 	.traffic {
+		padding-bottom: 7.7%;
+
 		&__kinds-holder {
 			margin-top: 45px;
 		}
@@ -1075,8 +1085,17 @@
 		}
 	}
 
-	.benefits {
+	.quality {
+		margin-top: 0;
+	}
 
+	.director {
+		&__info {
+			margin-top: 0;
+		}
+	}
+
+	.benefits {
 
 		&__list {
 			margin: 0 17px 0 12px;
@@ -1093,7 +1112,8 @@
 
 			&::before {
 				font-size: 24px;
-				top: 5px;
+				top: 0px;
+				opacity: 0.5;
 			}
 
 			&:first-child::before {
@@ -1103,6 +1123,11 @@
 			&:nth-child(4):before {
 				left: -1px;
 			}
+		}
+
+		&__estimate-btn {
+			margin-top: 25px;
+			padding-bottom: 70px;
 		}
 	}
 } 
