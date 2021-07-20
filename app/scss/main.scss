@@ -880,6 +880,7 @@
 
 		&__item {
 			margin-bottom: 65px;
+			min-height: 115px;
 		}
 
 		&__item:nth-child(odd) {
@@ -893,6 +894,10 @@
 		&__item:nth-child(4)::before {
 			left: -5px;
 		}
+
+		&__item:first-child br {
+			display: none;
+		}	
 
 		&__item:first-child:before {
 			left: 15px;
@@ -1105,7 +1110,7 @@
 		&__item {
 			
 			max-width: 280px;
-
+			min-height: 0px;
 			padding-left: 30px !important;
 			margin-bottom: 50px;
 
