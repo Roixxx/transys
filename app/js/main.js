@@ -1,3 +1,9 @@
-// Your main script
+let examples = document.querySelector('.examples');
 
-const index = 'This is a placeholder!';
+examples.slick({
+	infinite: true,
+	slidesToShow: 3,
+	slidesToScroll: 3
+});
+
+console.log(examples)
