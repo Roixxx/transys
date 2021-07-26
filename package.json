@@ -44,6 +44,7 @@
     "gulp-terser": "^1.2.0"
   },
   "dependencies": {
-    "imagemin-mozjpeg": "^9.0.0"
+    "imagemin-mozjpeg": "^9.0.0",
+    "swiper": "^6.8.0"
   }
 }
