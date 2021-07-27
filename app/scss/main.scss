@@ -680,6 +680,8 @@
 .examples {
 	&__item {
 		max-height: 177px;
+		width: auto;
+		cursor: pointer;
 	}
 
 
@@ -811,8 +813,15 @@
 			}
 		}
 	}
+	.examples {
+		&__item img {
+			max-height: 140px;
 
+		}
+	}
 }
+
+
 
 @media (max-width: 860px) {
 	.intro {
@@ -924,7 +933,13 @@
 		&__item:nth-child(odd) {
 			max-width: 345px;
 		}
-		
+	}
+
+	.examples {
+		&__item img {
+			max-height: 120px;
+
+		}
 	}
 }
 
@@ -1047,6 +1062,12 @@
 		&__icon {
 			min-width: 53px;
     	min-height: 53px;
+		}
+	}
+	.examples {
+		&__item img {
+			max-height: 90px;
+
 		}
 	}
 }
