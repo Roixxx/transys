@@ -1072,6 +1072,45 @@
 	}
 }
 
+// guarantees
+
+.guarantees {
+	&__container {
+		max-width: 1214px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.section-title {
+		margin-top: 45px;
+	}
+
+	.section-title::before, .section-title::after {
+		background-color: #C4C4C4;
+	}
+
+	.top-list {
+		&__item {
+
+		}
+
+		&__text {
+
+		}
+
+		&__icon {
+			width: 53px;
+			height: 53px;
+			background-color: #F1F1F1;
+			border-radius: 50%;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+}
+
+
+
 @media (max-width: 480px) {
 	.advantages {
 		padding-bottom: 80px;
