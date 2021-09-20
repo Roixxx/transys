@@ -1,9 +1,6 @@
-@import './base/normalize.scss';
-
-@import './base/vars.scss';
-
-
-@import './base/base.scss';
+@import './base/_vars.scss';
+@import './base/_normalize.scss';
+@import './base/_base.scss';
 
 
 //SECTION HEADER
@@ -678,13 +675,12 @@
 // examples section
 
 .examples {
+	overflow: hidden;
 	&__item {
 		max-height: 177px;
 		width: auto;
 		cursor: pointer;
 	}
-
-
 }
 
 
